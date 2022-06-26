@@ -1,0 +1,20 @@
+import java.util.*;
+  
+  public class Main{
+  
+  public static void main(String[] args) {
+    // write your code here
+    Scanner scn=new Scanner(System.in);
+    int n=scn.nextInt();
+    System.out.println("Enter limit of series=");
+    int f=0;
+    int s=1;
+    System.out.println("Fibonacci series=");
+    for(int i=1 ; i<=n; ++i){
+        System.out.print(f+"\t");
+        int t=f+s;
+        f=s;
+        s=t;
+    }
+   }
+  }
